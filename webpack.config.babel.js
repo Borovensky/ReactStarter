@@ -9,13 +9,13 @@ var extractPlugin = new ExtractTextPlugin({
 module.exports = {
 
     entry: ['./src/index.js', './src/styles/main.sass'],
-
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'bundle.js'
     },
 
     module: {
+
         loaders: [{
             exclude: /node_modules/,
             loader: 'babel-loader',
@@ -35,14 +35,12 @@ module.exports = {
         extensions: ['.js', '.jsx']
     },
     
-
     plugins: [
         extractPlugin,
         // new UglifyJsPlugin()
     ],
 
     devtool: "source-map",
-
 
     watchOptions: {
         aggregateTimeout: 400,
