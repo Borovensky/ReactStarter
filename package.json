@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "node server.js",
-    "build": "npx webpack --config webpack.config.babel.js"
+    "build": "npx webpack --config webpack.config.babel.js",
+    "watch": "npx webpack --watch --config webpack.config.babel.js"
   },
   "dependencies": {
     "express": "^4.16.2",

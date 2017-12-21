@@ -1,11 +1,8 @@
 import React, { Component } from 'react';
-import { test } from '../actions';
 
 class Root extends Component {
 
     render() {
-        test();
-        console.log('huy');
 
         return(
             <div>

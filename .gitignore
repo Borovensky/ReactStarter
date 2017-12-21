@@ -2,6 +2,8 @@
 
 # dependencies
 /node_modules
+/dist/bundle.js
+/dist/bundle.css
 .DS_Store
 npm-debug.log*
 

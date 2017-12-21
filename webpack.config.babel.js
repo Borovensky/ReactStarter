@@ -43,7 +43,7 @@ module.exports = {
 
     devtool: "source-map",
 
-    watch: true,
+
     watchOptions: {
         aggregateTimeout: 400,
         ignored: /node_modules/
