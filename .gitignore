@@ -4,8 +4,8 @@
 /node_modules
 /dist/bundle.js
 /dist/bundle.css
-/dist/bundle.map.js
-/dist/bundle.map.css
+/dist/bundle.js.map
+/dist/bundle.css.map
 
 .DS_Store
 npm-debug.log*
