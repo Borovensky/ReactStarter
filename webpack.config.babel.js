@@ -1,4 +1,5 @@
 import path from 'path';
+import webpack from 'webpack';
 import ExtractTextPlugin from 'extract-text-webpack-plugin';
 import UglifyJsPlugin from 'uglifyjs-webpack-plugin';
 
@@ -37,10 +38,15 @@ module.exports = {
     
     plugins: [
         extractPlugin,
-        // new UglifyJsPlugin()
+        // new webpack.DefinePlugin({
+        //     'process.env': {
+        //       'NODE_ENV': JSON.stringify('production')
+        //     }
+        // }),
+        // new webpack.optimize.UglifyJsPlugin()
     ],
 
-    devtool: "source-map",
+    devtool: "cheap-module-source-map",
 
     watchOptions: {
         aggregateTimeout: 400,
