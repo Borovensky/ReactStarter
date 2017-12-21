@@ -31,6 +31,8 @@ In case you want to change port to what you prefer more, you can change it in `s
 
 Run `npm run build` to build the progect or run `npm run watch` to watch for changes and automatically rebuild the project.
 
+## Result
+
 As a result inside the `dist` folder you will get three files:
 - `index.html` (this file is the main html file, it is already in `dist` folder by default);
 - `bundle.js` (this file is result of all **.js and **.jsx files from `src` folder);
